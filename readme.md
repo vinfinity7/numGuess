@@ -55,10 +55,10 @@ Congratulations! You guessed the correct number!
 
 ## Code Explanation
 
-- `std::srand(static_cast<unsigned int>(std::time(0)));`: Seeds the random number generator with the current time to ensure a different sequence of random numbers each time the program is run.
-- `int randomNumber = std::rand() % 100 + 1;`: Generates a random number between 1 and 100.
+- `srand((unsigned int)(time(0)));`: Seeds the random number generator with the current time to ensure a different sequence of random numbers each time the program is run.
+- `int randomNumber = rand() % 100 + 1;`: Generates a random number between 1 and 100.
 - The `while (true)` loop keeps running until the user guesses the correct number.
-- `std::cin >> guess;`: Takes the user's guess as input.
+- `cin >> guess;`: Takes the user's guess as input.
 - The program compares the guess to the random number and provides feedback accordingly.
 
 ## License
